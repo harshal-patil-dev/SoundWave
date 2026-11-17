@@ -1,0 +1,80 @@
+/* Home Page */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* Featured Music Section */
+
+.featured-section {
+  min-height: 250px;
+  padding: 40px;
+  border-radius: 20px;
+  background: linear-gradient(120deg, #AB140B, #FF4D2E);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-section h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.featured-section p {
+  font-size: 15px;
+  color: #FFE5DF;
+  margin-bottom: 25px;
+}
+
+.featured-section button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 9px;
+  background: white;
+  color: var(--primary);
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.featured-section button:hover {
+  transform: translateY(-2px);
+}
+
+/* Home Sections */
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-header h2 {
+  font-size: 21px;
+  margin-bottom: 6px;
+}
+
+.section-header p {
+  font-size: 13px;
+  color: #888888;
+}
+
+.section-header button {
+  border: none;
+  background: transparent;
+  color: var(--primary);
+  font-weight: 600;
+}

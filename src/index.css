@@ -1,0 +1,49 @@
+@import "./styles/variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+    font-family: 'Inter', sans-serif;
+    color: #2B2B2B;
+    background: #FFF8F0;
+
+    --primary: #AB140B;
+    --secondary: #FF4D2E;
+    --accent: #FFB3A7;
+    --background: #FFF8F0;
+    --text: #2B2B2B;
+    --white: #FFFFFF;
+    --border: #F0E5DA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    background: var(--background);
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}

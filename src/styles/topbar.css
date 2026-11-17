@@ -1,0 +1,57 @@
+/* Topbar */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 25px 35px;
+  background: var(--background);
+}
+
+.topbar-greeting h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.topbar-greeting p {
+  color: #888888;
+  font-size: 13px;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.topbar-search {
+  width: 230px;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  outline: none;
+  background: white;
+}
+
+.topbar-search:focus {
+  border-color: var(--primary);
+}
+
+.notification-btn {
+  border: none;
+  background: white;
+  padding: 12px 15px;
+  border-radius: 10px;
+}
+
+.profile-avatar {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--primary);
+  font-weight: 700;
+}

@@ -1,0 +1,80 @@
+/* Bottom Music Player */
+
+.player-bar {
+  position: fixed;
+  bottom: 0;
+  left: 250px;
+  right: 0;
+  height: 90px;
+  background: #FFFFFF;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  z-index: 20;
+  gap: 20px;
+}
+
+.player-song-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 220px;
+}
+
+.song-thumbnail {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  background: #FFF0EC;
+  color: var(--primary);
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.player-song-info h4 {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.player-song-info p {
+  color: #888888;
+  font-size: 11px;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.player-controls button {
+  border: none;
+  background: transparent;
+  font-size: 19px;
+  color: #555555;
+}
+
+.player-controls .play-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  font-size: 17px;
+}
+
+.player-volume {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #777777;
+  font-size: 12px;
+}
+
+.player-volume input {
+  width: 100px;
+  accent-color: var(--primary);
+}
