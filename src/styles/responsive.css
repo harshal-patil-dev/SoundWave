@@ -1,13 +1,62 @@
-/* Responsive Artist Grid */
 
+/* Tablet */
 @media (max-width: 1100px) {
-  .artists-grid {
+  .home-top-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .top-artists-section .artists-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .albums-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
+/* Mobile */
 @media (max-width: 700px) {
-  .artists-grid {
+  .home-top-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-section {
+    padding: 25px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .featured-artwork {
+    width: 160px;
+    height: 160px;
+  }
+
+  .featured-content h1 {
+    font-size: 28px;
+  }
+
+  .top-artists-section .artists-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .albums-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+  .featured-artwork {
+    width: 130px;
+    height: 130px;
+  }
+
+  .featured-content h1 {
+    font-size: 24px;
+  }
+
+  .top-artists-section .artists-grid {
+    grid-template-columns: 1fr;
   }
 }

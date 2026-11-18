@@ -1,54 +1,108 @@
 /* Home Page */
-
 .home-page {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 30px;
 }
 
-/* Featured Music Section */
+/* Featured + Top Artists Layout */
+.home-top-layout {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 25px;
+  align-items: stretch;
+}
 
+/* Featured Music Banner */
 .featured-section {
-  min-height: 250px;
-  padding: 40px;
-  border-radius: 20px;
-  background: linear-gradient(120deg, #AB140B, #FF4D2E);
+  min-height: 300px;
+  padding: 35px;
+  border-radius: 30px;
+  background: linear-gradient(120deg, #790D19, #A7192B);
   color: white;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 12px 30px rgba(121, 13, 25, 0.15);
 }
 
-.featured-section h1 {
-  font-size: 36px;
-  font-weight: 800;
-  margin-bottom: 12px;
+.featured-content {
+  flex: 1;
+  position: relative;
+  z-index: 1;
 }
 
-.featured-section p {
-  font-size: 15px;
-  color: #FFE5DF;
+.featured-label {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.featured-content h1 {
+  font-size: 34px;
+  line-height: 1.2;
+  max-width: 350px;
+  margin-bottom: 15px;
+}
+
+.featured-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #F5DADD;
   margin-bottom: 25px;
 }
 
-.featured-section button {
-  padding: 12px 25px;
+.featured-play-btn {
+  padding: 12px 28px;
   border: none;
-  border-radius: 9px;
+  border-radius: 30px;
   background: white;
-  color: var(--primary);
+  color: #111111;
   font-weight: 700;
-  transition: 0.2s ease;
+  cursor: pointer;
 }
 
-.featured-section button:hover {
-  transform: translateY(-2px);
+.featured-artwork {
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
-/* Home Sections */
+.featured-artwork img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom right;
+  border-radius: 0;
+  filter: drop-shadow(-10px 5px 20px rgba(0, 0, 0, 0.2));
+}
+
+/* Top Artists */
+.top-artists-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5px 0;
+}
+
+.top-artists-section .artists-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
 
 .home-section {
   display: flex;
@@ -56,6 +110,7 @@
   gap: 20px;
 }
 
+/* Section Headings */
 .section-header {
   display: flex;
   align-items: center;
@@ -63,18 +118,19 @@
 }
 
 .section-header h2 {
-  font-size: 21px;
+  font-size: 19px;
   margin-bottom: 6px;
 }
 
 .section-header p {
   font-size: 13px;
-  color: #888888;
+  color: #777777;
 }
 
 .section-header button {
   border: none;
   background: transparent;
-  color: var(--primary);
+  color: #E50914;
   font-weight: 600;
+  cursor: pointer;
 }
